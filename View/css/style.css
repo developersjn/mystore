@@ -508,10 +508,10 @@ clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
 .cycles_text{
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     color: #1c1c1c;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
     padding-top: 40px;
 }
 /*.cycles_text:after {
