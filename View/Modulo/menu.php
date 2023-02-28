@@ -22,7 +22,7 @@
                     <button><i class="fa fa-upload"></i></button>
                     <button><i class="fa fa-th"></i></button>
                     <button><i class="fa fa-bell"></i></button>
-                    <a href="#" class="avatar"><img src="<?php echo RutaController::RutaView(); ?>img/avatar.jpg" alt=""></a>
+                    <a href="#" class="avatar"><img src="<?php echo RutaController::RutaView(); ?>images/avatar.jpg" alt=""></a>
                 </div>
                 <div class="enlaces-movil">
                     <a href="#">Mi Cuenta</a>
@@ -64,22 +64,22 @@
 
                     <div class="banner-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/tecnologia-banner-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/tecnologia-banner-1.png" alt="">
                         </a>
                     </div>
 
                     <div class="galeria-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/tecnologia-galeria-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/tecnologia-galeria-1.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/tecnologia-galeria-2.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/tecnologia-galeria-2.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/tecnologia-galeria-3.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/tecnologia-galeria-3.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/tecnologia-galeria-4.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/tecnologia-galeria-4.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -96,22 +96,22 @@
 
                     <div class="banner-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/libros-banner-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/libros-banner-1.png" alt="">
                         </a>
                     </div>
 
                     <div class="galeria-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/libros-galeria-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/libros-galeria-1.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/libros-galeria-2.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/libros-galeria-2.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/libros-galeria-3.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/libros-galeria-3.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/libros-galeria-4.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/libros-galeria-4.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -128,22 +128,22 @@
 
                     <div class="banner-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/ropa-banner-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/ropa-banner-1.png" alt="">
                         </a>
                     </div>
 
                     <div class="galeria-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/ropa-galeria-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/ropa-galeria-1.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/ropa-galeria-2.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/ropa-galeria-2.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/ropa-galeria-3.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/ropa-galeria-3.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/ropa-galeria-4.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/ropa-galeria-4.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -164,22 +164,22 @@
 
                     <div class="banner-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/hogar-banner-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/hogar-banner-1.png" alt="">
                         </a>
                     </div>
 
                     <div class="galeria-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/hogar-galeria-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/hogar-galeria-1.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/hogar-galeria-2.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/hogar-galeria-2.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/hogar-galeria-3.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/hogar-galeria-3.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>/img/hogar-galeria-4.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/hogar-galeria-4.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -196,22 +196,22 @@
 
                     <div class="banner-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/juegos-banner-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/juegos-banner-1.png" alt="">
                         </a>
                     </div>
 
                     <div class="galeria-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/juegos-galeria-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/juegos-galeria-1.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/juegos-galeria-2.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/juegos-galeria-2.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/juegos-galeria-3.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/juegos-galeria-3.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/juegos-galeria-4.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/juegos-galeria-4.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -228,22 +228,22 @@
 
                     <div class="banner-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/belleza-banner-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/belleza-banner-1.png" alt="">
                         </a>
                     </div>
 
                     <div class="galeria-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/belleza-galeria-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/belleza-galeria-1.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/belleza-galeria-2.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/belleza-galeria-2.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/belleza-galeria-3.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/belleza-galeria-3.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/belleza-galeria-4.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/belleza-galeria-4.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -258,22 +258,22 @@
 
                     <div class="banner-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/comida-banner-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/comida-banner-1.png" alt="">
                         </a>
                     </div>
 
                     <div class="galeria-subcategoria">
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/comida-galeria-1.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/comida-galeria-1.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/comida-galeria-2.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/comida-galeria-2.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/comida-galeria-3.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/comida-galeria-3.png" alt="">
                         </a>
                         <a href="#">
-                            <img src="<?php echo RutaController::RutaView(); ?>img/comida-galeria-4.png" alt="">
+                            <img src="<?php echo RutaController::RutaView(); ?>images/comida-galeria-4.png" alt="">
                         </a>
                     </div>
                 </div>
