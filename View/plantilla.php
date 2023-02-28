@@ -11,7 +11,7 @@
         <?php include 'Modulo/slider.php' ?>
         <!-- header section end -->
         <!-- product section start -->
-
+        <?php include 'Modulo/producto.php' ?>
         <!-- product section end -->
         <!-- about section start -->
 
