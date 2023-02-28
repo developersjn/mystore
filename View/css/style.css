@@ -514,7 +514,7 @@ clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
     text-align: right;
     padding-top: 40px;
 }
-.cycles_text:after {
+/*.cycles_text:after {
     content: '';
     position: absolute;
     width: 180px;
@@ -524,7 +524,7 @@ clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
     right: initial;
     margin: 0 auto;
     top: 70px;
-}
+}*/
 .lorem_text{
     width: 100%;
     float: left;
