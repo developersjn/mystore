@@ -1,1 +1,1 @@
- <?php include '..Producto/FindAll.php';
+ <?php include '../Producto/FindAll.php';
