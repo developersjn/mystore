@@ -4,12 +4,12 @@
 class RutaController {
     //put your code here
     public static function RutaView() {
-        return "https://tienda-drywall-production.up.railway.app/View/";
+        return "https://mystore-production-66ee.up.railway.app/View/";
     }
     public static function getRutaAdmin() {
-        return "https://tienda-drywall-production.up.railway.app/admin/";
+        return "https://mystore-production-66ee.up.railway.app/admin/";
     }
     public static function getRutaPrincipal() {
-        return "https://tienda-drywall-production.up.railway.app/";
+        return "https://mystore-production-66ee.up.railway.app/";
     }
 }
