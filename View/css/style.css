@@ -518,7 +518,7 @@ clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
     content: '';
     position: absolute;
     width: 180px;
-    height: 1px;
+    height: 30px;
     background-color: #325662;
     left: 0px;
     right: initial;
