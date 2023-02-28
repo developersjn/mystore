@@ -492,7 +492,7 @@ button {
 }
 .box_main:after{
     content: '';
-    background-color: #f7c17b;
+/*    background-color: #f7c17b;*/
     position: absolute;
     width: 420px;
     right: 0px;
