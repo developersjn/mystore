@@ -1,50 +1,37 @@
 <?php
-$ruta = $_SERVER['DOCUMENT_ROOT'] . "/NetBeansProyect/CRUD_FUL/Controller/AlumnoController.php";
-require ($ruta);
+require 'Controller/ProductoController.php';
 
-if (!empty($_POST['btnregistrar'])) {
+
     $objProductoController = new ProductoController();
-    $objProductoController->create();
-}
+    $objProductoController->Create();
+
 ?>
 
-<form>
-    <div class="col-sm-10 form-horizontal">
-        <!-- Email input -->
-        <div class="form-outline mb-4">
-            <input type="email" id="form1Example1" class="form-control" />
-            <label class="form-label" for="form1Example1">Email address</label>
+<div class="container">
+    <form class="row g-3" method="post" enctype="multipart/form-data">
+        <div class="col-md-6">
+            <label for="txtNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="txtNombre" id="txtNombre">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Precio</label>
+            <input type="text" class="form-control" name="txtPrecio" id="txtPrecio">
+        </div>
+        <div class="col-12">
+            <label for="txtDescripcion" class="form-label">Descripcion</label>
+            <textarea type="textarea" class="form-control" name="txtDescripcion" id="txtDescripcion" placeholder=""></textarea>
+        </div>
+        <div class="col-md-6">
+            <label for="formFileMultiple" class="form-label">Imagen Portada</label>
+            <input class="form-control" type="file" name="imgPortada">
+        </div>
+        <div class="col-md-6">
+            <label for="formFileMultiple" class="form-label">Galeria</label>
+            <input class="form-control" type="file" name="imgGaleria[]" multiple>
         </div>
 
-        <!-- Password input -->
-        <div class="form-outline mb-4">
-            <input type="password" id="form1Example2" class="form-control" />
-            <label class="form-label" for="form1Example2">Password</label>
+        <div class="col-12">
+            <button type="submit" name="btnGuardar" class="btn btn-primary">Ingresar</button>
         </div>
-
-        <!-- 2 column grid layout for inline styling -->
-        <div class="row mb-4">
-            <div class="col d-flex justify-content-center">
-                <!-- Checkbox -->
-                <div class="form-check">
-                    <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="form1Example3"
-                        checked
-                        />
-                    <label class="form-check-label" for="form1Example3"> Remember me </label>
-                </div>
-            </div>
-
-            <div class="col">
-                <!-- Simple link -->
-                <a href="#!">Forgot password?</a>
-            </div>
-        </div>
-
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-    </div>
-</form>
+    </form>
+</div>

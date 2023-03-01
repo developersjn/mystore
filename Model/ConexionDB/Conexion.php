@@ -5,7 +5,7 @@ class Conexion{
     private static $objConexion = null;
     private $con;
 
-    private function Conexion() {
+    private function __construct() {
         $this->con = mysqli_connect(HOST, USER, PASS, DB) or die("Error en la cadena Conexion" . mysql_error());
         if ($this->con->connect_errno) {
             print'Error al Conectar con la BD' . $this->con->connect_errno;

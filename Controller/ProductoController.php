@@ -1,6 +1,6 @@
 <?php
 
-require "../Model/Dao/ProductoDao.php";
+require "Model/Dao/ProductoDao.php";
 
 class ProductoController {
 
@@ -18,21 +18,27 @@ class ProductoController {
     }
 
     public function Create() {
-        $Nombre = $_REQUEST['txtNombre'];
-        $Descripcion = $_REQUEST['txtDescripcion'];
-        $Precio = $_REQUEST['txtPrecio'];
-        $Imagen = $_REQUEST['txtImagen'];
-        $IdCategoria = $_REQUEST['txtIdCategoria'];
+//        $Nombre = $_REQUEST['txtNombre'];
+//        $Descripcion = $_REQUEST['txtDescripcion'];
+//        $Precio = $_REQUEST['txtPrecio'];
+//        //$Imagen = $_REQUEST['txtImagen'];
+//        $IdCategoria = 1;
+        if (isset($_POST['btnGuardar'])) {
+            foreach ($_FILES['imgGaleria']['tmp_name'] as $key => $value) {
+                echo $_FILES['imgGaleria']['type'][$key];
+            }
+        }
 
-        $objProducto = new Producto();
-        $objProducto->setNombre($Nombre);
-        $objProducto->setDescripcion($Descripcion);
-        $objProducto->setPrecio($Precio);
-        $objProducto->setImagen($Imagen);
-        $objProducto->setIdCategoria($IdCategoria);
-
-        $objProductoDao = new ProductoDao();
-        return $objProductoDao->Create($objProducto);
+        //var_dump($_FILES['imgGaleria']['tmp_name']);
+//        $objProducto = new Producto();
+//        $objProducto->setNombre($Nombre);
+//        $objProducto->setDescripcion($Descripcion);
+//        $objProducto->setPrecio($Precio);
+//        $objProducto->setImagen($Imagen);
+//        $objProducto->setIdCategoria($IdCategoria);
+//
+//        $objProductoDao = new ProductoDao();
+//        return $objProductoDao->Create($objProducto);
     }
 
     public function Update() {

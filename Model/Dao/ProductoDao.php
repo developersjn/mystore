@@ -1,13 +1,13 @@
 <?php
 
-require "../ConexionDB/Conexion.php";
-require "../Entity/Producto.php";
+require "Model/ConexionDB/Conexion.php";
+require "Model/Entity/Producto.php";
 
 class ProductoDao {
 
     private static $con;
 
-    function ProductoDAO() {
+    function __construct() {
         self::$con = Conexion::saberEstado();
     }
 

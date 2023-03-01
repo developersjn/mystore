@@ -8,10 +8,11 @@
     <body>
         <?php include 'Modulo/menu.php'; ?>
         <!-- header section start -->
-        <?php include 'Modulo/slider.php'; ?>
+        <?php //include 'Modulo/slider.php';
+        include 'Producto/Create.php'?>
         <!-- header section end -->
         <!-- product section start -->
-        <?php include 'Modulo/main-content.php';?>
+        <?php //include 'Modulo/main-content.php';?>
         <!-- product section end -->
         <!-- about section start -->
 
