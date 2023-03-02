@@ -1,3 +1,4 @@
+<br><br><br>
 <div class="footer_section layout_padding">
     <div class="container-fluid">
         <div class="row">
@@ -46,6 +47,7 @@
 <script src="<?php echo RutaController::RutaView(); ?>js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo RutaController::RutaView(); ?>js/jquery-3.0.0.min.js"></script>
 <script src="<?php echo RutaController::RutaView(); ?>js/plugin.js"></script>
+<script src="<?php echo RutaController::RutaView(); ?>js/dropzone.js"></script>
 <!-- sidebar -->
 <script src="<?php echo RutaController::RutaView(); ?>js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="<?php echo RutaController::RutaView(); ?>js/custom.js"></script>
