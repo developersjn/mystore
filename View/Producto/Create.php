@@ -1,10 +1,7 @@
 <?php
-require 'Controller/ProductoController.php';
-
-
-    //$objProductoController = new ProductoController();
-    //$objProductoController->Create();
-
+//require 'Controller/ProductoController.php';
+//$objProductoController = new ProductoController();
+//$objProductoController->Create();
 ?>
 
 <div class="container">
@@ -23,7 +20,7 @@ require 'Controller/ProductoController.php';
         </div>
         <div class="col-md-6">
             <label for="formFileMultiple" class="form-label">Imagen Portada</label>
-            <input class="form-control" type="file" name="imgPortada">
+            <input class="form-control" type="file" name="imgPortada" id="imgPortada">
         </div>
         <div class="col-md-6">
             <label for="formFileMultiple" class="form-label">Galeria</label>
@@ -32,43 +29,51 @@ require 'Controller/ProductoController.php';
         <output id="miniatura"></output>
 
         <div class="col-12">
-            <button type="button" id="submit-all" name="btnGuardar" class="btn btn-primary">Ingresar</button>
+            <button type="button" id="" onclick="javascript:SubirImagen();" name="btnGuardar" class="btn btn-primary">Ingresar</button>
         </div>
     </form>
 </div>
-<script src="View/js/multiple.js"></script>
 <script>
-    function SubirImagen(){
-        var leng=document.getElementById("imgGaleria").files.length;
-        listaImg=new FormData();
-        
-        for(i=0;i<leng;i++){
-            img=document.getElementById("imgGaleria").files[i];
-            if(!!img.type.match(/image.*/)){
-                if(window.FileReader){
-                    img_leida=new FileReader();
+    function SubirImagen() {
+        var leng = document.getElementById("imgGaleria").files.length;
+        var nombreProducto = $('#txtNombre').val();
+        var precioProducto = $('#txtPrecio').val();
+        var DescripcionProducto = $('#txtDescripcion').val();
+        var imgPortada=$("#imgPortada")[0].files[0];
+        listaImg = new FormData();
+
+        for (i = 0; i < leng; i++) {
+            img = document.getElementById("imgGaleria").files[i];
+            if (!!img.type.match(/image.*/)) {
+                if (window.FileReader) {
+                    img_leida = new FileReader();
                     //img_leida=readAsDataURL(img);
                 }
-                listaImg.append("image_extra[]",img);
+                listaImg.append("image_extra[]", img);
             }
         }
-        
+        listaImg.append("txtNombreProducto", nombreProducto);
+        listaImg.append("txtPrecioProducto", precioProducto);
+        listaImg.append("txtDescripcionProducto", DescripcionProducto);
+        listaImg.append("operacion", "Create");
+        listaImg.append("file",imgPortada );
+        console.log(imgPortada);
+         var url="Controller/ProductoController.php";
+         //var url2="Controller/PruebaImgAjax.php";
+
         $.ajax({
-            url:"Controller/PruebaImgAjax.php",
-            type:"POST",
-            data:listaImg,
-            cache:false,
-            contentType:false,
-            processData:false,
-            success:function(e){
-                alert("exito"+e);
+            url: url,
+            type: "POST",
+            data: listaImg,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (e) {
+                alert("exito" + e);
             },
             error: function () {
                 alert("error");
             }
         });
     }
-    
-  
-
 </script>

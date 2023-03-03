@@ -11,8 +11,14 @@
 //}
 
 $directorio = "../View/upload/img/productos/";
-$contador = count($_FILES['image_extra']['tmp_name']);
 
+$nombreProducto=$_POST["txtNombreProducto"];
+$precioProducto=$_POST["txtPrecioProducto"];
+$descripcionProducto=$_POST["txtDescripcionProducto"];
+$operacion=$_POST["operacion"];
+
+echo $nombreProducto." - ".$precioProducto." - ".$descripcionProducto." - ".$operacion;
+$contador = count($_FILES['image_extra']['tmp_name']);
 for ($i = 0; $i < $contador; $i++) {
     $size = getimagesize($_FILES['image_extra']['tmp_name'][$i]);
     $ancho = $size[0];

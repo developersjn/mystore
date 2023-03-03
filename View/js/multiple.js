@@ -1,8 +1,9 @@
 jQuery(document).ready(function ($) {
-    alert("se inicio");
+    multiple.init();
 });
 var multiple = {
     init: function () {
+        
         Dropzone.prototype.defaultOptions.dictDefaultMessage = "Arrastra los archivos aquí para subirlos";
         Dropzone.prototype.defaultOptions.dictFallbackMessage = "Su navegador no admite archivos subidos arrastrandolos al elemento.";
         Dropzone.prototype.defaultOptions.dictFallbackText = "Por favor, utilice el formulario de reserva de abajo para cargar sus archivos como en los viejos tiempos.";
@@ -21,7 +22,7 @@ var multiple = {
             uploadMultiple: true,
             parallelUploads: 50,
             init: function () {
-                var submitButton = document.querySelector("#submit-all")
+                var submitButton = document.querySelector("#submit-all");
                 myDropzone = this;
                 submitButton.addEventListener("click", function () {
 

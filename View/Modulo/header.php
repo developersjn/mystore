@@ -14,7 +14,6 @@
 
     <!--star menu principal-->
     <link rel="stylesheet" type="text/css" href="<?php echo RutaController::RutaView(); ?>Assets/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo RutaController::RutaView(); ?>Content/plugins/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="<?php echo RutaController::RutaView(); ?>Content/plugins/glider/css/glider.min.css"/>
     <link rel="stylesheet" href="<?php echo RutaController::RutaView(); ?>css/estilos.css">
     <!--end menu principal-->
@@ -32,6 +31,7 @@
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <!-- owl stylesheets --> 
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo RutaController::RutaView(); ?>css/owl.carousel.min.css">
     <link rel="stylesoeet" href="<?php echo RutaController::RutaView(); ?>css/owl.theme.default.min.css">
