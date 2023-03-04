@@ -1,15 +1,23 @@
 <?php
 
-class File {
+class Galeria {
 
     private $IdFile;
     private $UrlFoto;
+    private $IdProducto;
 
     public function __construct() {
         
     }
+    public function getIdProducto() {
+        return $this->IdProducto;
+    }
 
-    public function getIdFile() {
+    public function setIdProducto($IdProducto): void {
+        $this->IdProducto = $IdProducto;
+    }
+
+        public function getIdFile() {
         return $this->IdFile;
     }
 

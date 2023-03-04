@@ -18,9 +18,9 @@ class ProductoDao {
             $stmt->bind_param('sssss',
                     $objProducto->getNombre(),
                     $objProducto->getDescripcion(),
-                    $objProducto->getPrecio(),
-                    $objProducto->getImagen(),
-                    $objProducto->getIdCategoria());
+                    $objProducto->getPrecio(),                    
+                    $objProducto->getIdCategoria(),
+                    $objProducto->getImagenPortada());
             //$stmt->execute();
             if (!$stmt->execute()) {
                 echo 'error al insertar datos';
@@ -66,7 +66,7 @@ class ProductoDao {
             $objProducto->setNombre($row['Nombre']);
             $objProducto->setDescripcion($row['Descripcion']);
             $objProducto->setPrecio($row['Precio']);
-            $objProducto->setImagen($row['Imagen']);
+            $objProducto->setImagenPortada($row['ImagenPortada']);
             $objProducto->setIdCategoria($row['IdCategoria']);
         }
         $stmt->close();
@@ -84,7 +84,7 @@ class ProductoDao {
             $objProducto->setNombre($row['Nombre']);
             $objProducto->setDescripcion($row['Descripcion']);
             $objProducto->setPrecio($row['Precio']);
-            $objProducto->setImagen($row['Imagen']);
+            $objProducto->setImagenPortada($row['ImagenPortada']);
             $objProducto->setIdCategoria($row['IdCategoria']);
             $listaProducto[] = $objProducto;
         }
@@ -100,9 +100,9 @@ class ProductoDao {
                     $objProducto->getIdProducto(),
                     $objProducto->getNombre(),
                     $objProducto->getDescripcion(),
-                    $objProducto->getPrecio(),
-                    $objProducto->getImagen(),
-                    $objProducto->getIdCategoria());
+                    $objProducto->getPrecio(),                    
+                    $objProducto->getIdCategoria(),
+                    $objProducto->getImagenPortada());
             //$stmt->execute();
             if (!$stmt->execute()) {
                 echo 'error al Actualizar  datos';

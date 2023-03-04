@@ -1,14 +1,19 @@
 <?php
-require "../ConexionDB/Conexion.php";
-require "../Entity/File.php";
+require "Model/ConexionDB/Conexion.php";
+require "Model/Entity/Galeria.php";
 
-class FileDao {
+class GaleriaDao {
     //put your code here
-    public function Create(File $objFile) {
-        $create = "call SP_InsertFile(?)";
+    private static $con;
+
+    function __construct() {
+        self::$con = Conexion::saberEstado();
+    }
+    public function Create(Galeria $objGaleria) {
+        $create = "call SP_InsertFile(?,?)";
         try {
             $stmt = self::$con->getCon()->prepare($create);
-            $stmt->bind_param('s',$objFile->getUrlFoto());
+            $stmt->bind_param('ss',$objGaleria->getUrlFoto(),$objGaleria->getIdProducto());
             //$stmt->execute();
             if (!$stmt->execute()) {
                 echo 'error al insertar datos';

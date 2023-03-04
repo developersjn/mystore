@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/AppServ/www/NetBeansProyect/TiendaDrywall/Controller/ProductoController.php</file>
             <file>file:/C:/AppServ/www/NetBeansProyect/TiendaDrywall/View/Producto/Create.php</file>
+            <file>file:/C:/AppServ/www/NetBeansProyect/TiendaDrywall/Model/Dao/ProductoDao.php</file>
         </group>
     </open-files>
 </project-private>

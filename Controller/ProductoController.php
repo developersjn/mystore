@@ -1,6 +1,6 @@
 <?php
 
-//require "Model/Dao/ProductoDao.php";
+require "Model/Dao/ProductoDao.php";
 
 class ProductoController {
 
@@ -71,25 +71,40 @@ class ProductoController {
     }
 
     public function CreateAjax() {
+        
+        $objProductoDao=new ProductoDao();
+                
 
         $nombreProducto = $_POST["txtNombreProducto"];
         $precioProducto = $_POST["txtPrecioProducto"];
         $descripcionProducto = $_POST["txtDescripcionProducto"];
+        $idCategoria=1;
 
         $tmp_name_img_principal = $_FILES['file']['tmp_name'];
         $type_img_principal = $_FILES['file']['type'];
         $name_img_principal = $_FILES['file']['name'];
         $directorio = "../View/upload/img/productos";
         $rutaImgPrinciapl = $this->EscribirImagenDirectorio($tmp_name_img_principal, $type_img_principal, $name_img_principal, $directorio);
-
+        $objProducto=new Producto();
+        $objProducto->setNombre($nombreProducto);
+        $objProducto->setDescripcion($descripcionProducto);
+        $objProducto->setPrecio($precioProducto);
+        $objProducto->setIdCategoria($idCategoria);
+        $objProducto->setImagenPortada($rutaImgPrinciapl);        
+        $objProductoDao->Create($objProducto);
+        
+        
         $tmp_name_sec = $_FILES['image_extra']['tmp_name'];
         for ($i = 0; $i < count($tmp_name_sec); $i++) {
             $tmp_name = $_FILES['image_extra']['tmp_name'][$i];
             $type = $_FILES['image_extra']['type'][$i];
             $name = $_FILES['image_extra']['name'][$i];
-            $this->EscribirImagenDirectorio($tmp_name, $type, $name, $directorio);
+            $rutaImgGaleria=$this->EscribirImagenDirectorio($tmp_name, $type, $name, $directorio);
+        
+            
+            
         }
-        echo "exito";
+        
     }
 
     public function EscribirImagenDirectorio($tmp_name, $type, $name, $directorio) {

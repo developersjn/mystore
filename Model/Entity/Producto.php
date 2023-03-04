@@ -6,9 +6,9 @@ class Producto {
     private $IdProducto;
     private $Nombre;
     private $Descripcion;
-    private $Precio;
-    private $Imagen;
+    private $Precio;    
     private $IdCategoria;
+    private $ImagenPortada;
     public function __construct() {
         
     }
@@ -29,8 +29,8 @@ class Producto {
         return $this->Precio;
     }
 
-    public function getImagen() {
-        return $this->Imagen;
+    public function getImagenPortada() {
+        return $this->ImagenPortada;
     }
 
     public function getIdCategoria() {
@@ -53,8 +53,8 @@ class Producto {
         $this->Precio = $Precio;
     }
 
-    public function setImagen($Imagen): void {
-        $this->Imagen = $Imagen;
+    public function setImagenPortada($ImagenPortada): void {
+        $this->ImagenPortada = $ImagenPortada;
     }
 
     public function setIdCategoria($IdCategoria): void {
