@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--    header-->
-    <?php include 'Modulo/header.php' ?>
-    
-    <!--end header-->
+    <!--start Style-->
+    <?php include 'Modulo/Style.php' ?>
+    <!--end Style-->
 
     <body>
         <?php include 'Modulo/menu.php'; ?>
-        <!-- header section start -->
-        <?php //include 'Modulo/slider.php';
-        include 'Producto/Create.php'?>
-        <!-- header section end -->
-        <!-- product section start -->
-        <?php //include 'Modulo/main-content.php';?>
+
+        <!-- product section start --> 
+        <?php
+        $url=array();
+        if (isset($_GET['ruta'])) {
+            $url= explode("/", $_GET['ruta']);            
+            switch ($url[0]){
+                case "producto":
+                    include 'Producto/Find.php';
+                    break;
+                default :
+                    include 'Home/Home.php';
+            }
+            
+        } else {
+            include 'Home/Home.php';
+        }
+        ?>
+
         <!-- product section end -->
         <!-- about section start -->
 
@@ -28,6 +40,9 @@
         <!-- contact section end -->        
         <!-- footer section start -->
         <?php include 'Modulo/footer.php' ?>
-        <!-- footer section end -->       
+        <!-- footer section end -->   
+        <!-- Scripts section start -->
+        <?php include 'Modulo/Scripts.php' ?>
+        <!-- Scripts section end --> 
     </body>
 </html>

@@ -1,8 +1,6 @@
 <?php
+require 'Controller/PlantillaController.php';
+require 'Controller/RutaController.php';
 
-?>
-
-<h2>
-    admin
-</h2>
-
+$objPlantillaController=new PlantillaController();
+$objPlantillaController->ctrPlantilla();

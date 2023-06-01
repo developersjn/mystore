@@ -7,7 +7,7 @@
 
     <div class="contenedor contenedor-enlaces-nav">
         <div class="btn-departamentos " id="btn-departamentos">
-            <p><i class="fa fa-bars" aria-hidden="true"></i> <span>Categorias</span></p>
+            <p style="color:#FFFFFF;"><i class="fa fa-bars" aria-hidden="true"></i> <span>Categorias</span></p>
             <i class="icono-movil fa fa-caret-down"></i>
 
         </div>

@@ -11,54 +11,11 @@ class ProductoDao {
         self::$con = Conexion::saberEstado();
     }
 
-    public function Create(Producto $objProducto) {
-        $create = "call SP_InsertProducto(?,?,?,?,?)";
-        try {
-            $stmt = self::$con->getCon()->prepare($create);
-            $stmt->bind_param('sssss',
-                    $objProducto->getNombre(),
-                    $objProducto->getDescripcion(),
-                    $objProducto->getPrecio(),                    
-                    $objProducto->getIdCategoria(),
-                    $objProducto->getImagenPortada());
-            //$stmt->execute();
-            if (!$stmt->execute()) {
-                echo 'error al insertar datos';
-            } else {
-                echo 'DATOS GUARDADOS...';
-            }
-        } catch (Exception $ex) {
-            echo 'error: ' . $ex->getMessage();
-        } finally {
-            $stmt->close();
-            self::$con->cerrarConexion();
-        }
-
-        return;
-    }
-
-    public function Delete(Producto $objProducto) {
-        $delete = "call SP_DeleteProduct(?)";
-        try {
-            $stmt = self::$con->getCon()->prepare($delete);
-            $stmt->bind_param('s', $objProducto->getIdProducto());
-            //$stmt->execute();
-            if (!$stmt->execute()) {
-                echo 'error al eliminar datos';
-            } else {
-                echo 'DATOS BORRADOS...';
-            }
-        } catch (Exception $ex) {
-            echo 'error: ' . $ex->getMessage();
-        } finally {
-            self::$con->cerrarConexion();
-        }
-    }
-
     public function Find(Producto $objProducto) {
         $find = "call SP_FindProduct(?)";
+        $idProducto=$objProducto->getIdProducto();
         $stmt = self::$con->getCon()->prepare($find);
-        $stmt->bind_param('s', $objProducto->getIdProducto());
+        $stmt->bind_param('s', $idProducto);
         $stmt->execute();
         $result = $stmt->get_result();
         while ($row = $result->fetch_assoc()) {
@@ -92,32 +49,4 @@ class ProductoDao {
         return $listaProducto;
     }
 
-    public function Update(Producto $objProducto) {
-        $create = "call SP_UpdateProducto(?,?,?,?,?,?)";
-        try {
-            $stmt = self::$con->getCon()->prepare($create);
-            $stmt->bind_param('ssssss',
-                    $objProducto->getIdProducto(),
-                    $objProducto->getNombre(),
-                    $objProducto->getDescripcion(),
-                    $objProducto->getPrecio(),                    
-                    $objProducto->getIdCategoria(),
-                    $objProducto->getImagenPortada());
-            //$stmt->execute();
-            if (!$stmt->execute()) {
-                echo 'error al Actualizar  datos';
-            } else {
-                echo 'DATOS ACTUALIZADOS...';
-            }
-        } catch (Exception $ex) {
-            echo 'error: ' . $ex->getMessage();
-        } finally {
-            $stmt->close();
-            self::$con->cerrarConexion();
-        }
-
-        return;
-    }
-
 }
-
